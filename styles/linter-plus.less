@@ -148,7 +148,7 @@ atom-text-editor::shadow .linter-highlight, .linter-highlight{
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  &.error {
+  &.error, &.fatal {
     &:not(.line-number){
       background-color: @background-color-error;
       color: white;
@@ -172,7 +172,7 @@ atom-text-editor::shadow .linter-highlight, .linter-highlight{
       border-bottom: 1px dashed @background-color-warning;
     }
   }
-  &.trace, &.info {
+  &.trace, &.info, &.convention, &.refactor {
     &:not(.line-number){
       background-color: @background-color-info;
       color: white;
